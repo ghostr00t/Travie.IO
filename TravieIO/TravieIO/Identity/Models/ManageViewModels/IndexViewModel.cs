@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 
-namespace TravieIO.Models.ManageViewModels
+namespace TravieIO.Identity.Models.ManageViewModels
 {
     public class IndexViewModel
     {

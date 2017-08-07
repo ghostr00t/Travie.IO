@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace TravieIO.Models.ManageViewModels
+namespace TravieIO.Identity.Models.ManageViewModels
 {
     public class ManageLoginsViewModel
     {
