@@ -13,6 +13,7 @@ using TravieIO.Data;
 using TravieIO.Identity.Models;
 using TravieIO.Identity.Services;
 using TravieIO.Data.Models;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace TravieIO
 {
@@ -64,8 +65,13 @@ namespace TravieIO
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
-                app.UseBrowserLink();
+
+                // Add WebpackDevMiddleware:
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                {
+                    HotModuleReplacement = true,
+                    ReactHotModuleReplacement = true
+                });
             }
             else
             {
