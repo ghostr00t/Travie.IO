@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravieIO", "TravieIO\TravieIO.csproj", "{9B79D832-4872-4F69-A070-4E873C68BEE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravieIO", "TravieIO\TravieIO.csproj", "{9B79D832-4872-4F69-A070-4E873C68BEE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravieIO.DataAccess", "TravieIO.DataAccess\TravieIO.DataAccess.csproj", "{7249A590-920F-4DEA-8F4D-E452CD34522A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9B79D832-4872-4F69-A070-4E873C68BEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B79D832-4872-4F69-A070-4E873C68BEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B79D832-4872-4F69-A070-4E873C68BEE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7249A590-920F-4DEA-8F4D-E452CD34522A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7249A590-920F-4DEA-8F4D-E452CD34522A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7249A590-920F-4DEA-8F4D-E452CD34522A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7249A590-920F-4DEA-8F4D-E452CD34522A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

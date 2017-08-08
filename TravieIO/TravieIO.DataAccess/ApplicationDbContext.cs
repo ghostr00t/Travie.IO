@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using TravieIO.Identity.Models;
-using TravieIO.Data.Models;
+using TravieIO.DataAccess.Models;
 
-namespace TravieIO.Data
+
+namespace TravieIO.DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

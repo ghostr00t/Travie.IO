@@ -3,6 +3,8 @@ C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.runtimeconfig
 C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.runtimeconfig.dev.json
 C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.dll
 C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.pdb
+C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.DataAccess.dll
+C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.DataAccess.pdb
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.csprojResolveAssemblyReference.cache
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.AssemblyInfo.cs
