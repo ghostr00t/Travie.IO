@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace TravieIO.Data.Migrations
+namespace TravieIO.DataAccess.Migrations
 {
     public partial class AddedProjectEntity : Migration
     {
