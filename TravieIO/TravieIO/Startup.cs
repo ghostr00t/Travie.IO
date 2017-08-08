@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using TravieIO.Data;
+using TravieIO.DataAccess;
 using TravieIO.Identity.Models;
 using TravieIO.Identity.Services;
-using TravieIO.Data.Models;
+using TravieIO.DataAccess.Models;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace TravieIO

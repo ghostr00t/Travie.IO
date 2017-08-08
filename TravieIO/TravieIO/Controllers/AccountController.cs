@@ -12,7 +12,7 @@ using Microsoft.Extensions.Options;
 using TravieIO.Identity.Models;
 using TravieIO.Identity.Models.AccountViewModels;
 using TravieIO.Identity.Services;
-using TravieIO.Data.Models;
+using TravieIO.DataAccess.Models;
 
 namespace TravieIO.Controllers
 {
