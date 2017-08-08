@@ -10,8 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using TravieIO.Data;
-using TravieIO.Models;
-using TravieIO.Services;
+using TravieIO.Identity.Models;
+using TravieIO.Identity.Services;
+using TravieIO.Data.Models;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace TravieIO
 {
@@ -63,8 +65,13 @@ namespace TravieIO
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
-                app.UseBrowserLink();
+
+                // Add WebpackDevMiddleware:
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions
+                {
+                    HotModuleReplacement = true,
+                    ReactHotModuleReplacement = true
+                });
             }
             else
             {

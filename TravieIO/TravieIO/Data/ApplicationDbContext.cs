@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using TravieIO.Models;
+using TravieIO.Identity.Models;
+using TravieIO.Data.Models;
 
 namespace TravieIO.Data
 {

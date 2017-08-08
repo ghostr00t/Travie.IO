@@ -9,9 +9,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using TravieIO.Models;
-using TravieIO.Models.AccountViewModels;
-using TravieIO.Services;
+using TravieIO.Identity.Models;
+using TravieIO.Identity.Models.AccountViewModels;
+using TravieIO.Identity.Services;
+using TravieIO.Data.Models;
 
 namespace TravieIO.Controllers
 {
