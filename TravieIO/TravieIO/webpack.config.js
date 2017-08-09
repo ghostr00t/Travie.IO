@@ -9,9 +9,7 @@ const paths = {
 
 const config = {
         entry: {
-            // Bundles used on specific pages
-            homepage: '/Frontend/Homepage/index.tsx',
-            // Common libraries
+            home: './Frontend/Home/home.scss',
             libs: [
                 'bootstrap', 
                 'bootstrap/dist/css/bootstrap.css', 

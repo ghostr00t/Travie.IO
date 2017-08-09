@@ -2,12 +2,37 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="react-homepage-root"></div> <!-- root element -->
-
 @section Styles {
-    <link href="~/dist/styles/homepage.css" rel="stylesheet" />
+    <link href="~/dist/styles/home.css" rel="stylesheet" />
 }
 
-@section Scripts {
-    <script src="~/dist/homepage.js"></script>
-}
+<div class="row">
+    <div class="col-md-12">
+        <div class="row banner">
+            <div class="col-md-12">
+                <h2 class="text-center banner-text">Welcome to TravieIO</h2>
+                <p class="text-center">I can code all the stuff</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 category">
+        <h3 class="category-header">ASP.NET Core</h3>
+        <p class="category-content">
+            This will be an ongoing project. It is built using React and Typescript on the ASP .NET Core Framework.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h3 class="category-header">I can do ANYTHING!!!</h3>
+        <p class="category-content">
+           No... For real. I setup everything from the server to the view on this project.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h3 class="category-header">The club can't even handle me.</h3>
+        <p class="category-content">
+            This site is a resume and portfolio that I will use to take over the world.
+        </p>
+    </div>
+</div>
