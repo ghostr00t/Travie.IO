@@ -10,3 +10,7 @@ C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInf
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.AssemblyInfo.cs
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.dll
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.pdb
+C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.Contract.dll
+C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.Services.dll
+C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.Contract.pdb
+C:\www\TravieIO\TravieIO\TravieIO\bin\Debug\netcoreapp1.1\TravieIO.Services.pdb

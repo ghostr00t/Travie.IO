@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using TravieIO.DataAccess.Models;
 
@@ -26,6 +22,9 @@ namespace TravieIO.DataAccess
             // Add your customizations after calling base.OnModelCreating(builder);
 
             builder.Entity<Project>().HasKey(x => x.Id);
+
+            builder.Entity<Project>().Property(x => x.Name)
+                                     .IsRequired();
         }
     }
 }

@@ -9,10 +9,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using TravieIO.DataAccess;
+using TravieIO.DataAccess.Models;
 using TravieIO.Identity.Models;
 using TravieIO.Identity.Services;
-using TravieIO.DataAccess.Models;
+using TravieIO.DataAccess.Repositories;
+using TravieIO.DataAccess;
+using TravieIO.Contract.Services;
+using TravieIO.Services.Services;
+using TravieIO.Contract.Repositories;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace TravieIO
@@ -54,6 +58,9 @@ namespace TravieIO
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+
+            services.AddScoped<IProjectsRepository, ProjectsRepository>();
+            services.AddScoped<IProjectsService, ProjectsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

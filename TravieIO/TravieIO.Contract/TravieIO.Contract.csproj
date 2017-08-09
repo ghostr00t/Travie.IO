@@ -4,9 +4,4 @@
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TravieIO.DataAccess\TravieIO.DataAccess.csproj" />
-    <ProjectReference Include="..\TravieIO\TravieIO.csproj" />
-  </ItemGroup>
-
 </Project>

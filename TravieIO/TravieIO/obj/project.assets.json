@@ -2,6 +2,9 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
+      "Baseclass.Contrib.Nuget.Output/2.3.0-vs20172": {
+        "type": "package"
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -4302,6 +4305,13 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "TravieIO.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        }
+      },
       "TravieIO.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
@@ -4312,12 +4322,33 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.2",
           "Microsoft.EntityFrameworkCore.Tools": "1.1.1",
-          "Microsoft.NETCore.App": "1.1.2"
+          "Microsoft.NETCore.App": "1.1.2",
+          "TravieIO.Contract": "1.0.0"
+        }
+      },
+      "TravieIO.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2",
+          "TravieIO.Contract": "1.0.0",
+          "TravieIO.DataAccess": "1.0.0"
         }
       }
     }
   },
   "libraries": {
+    "Baseclass.Contrib.Nuget.Output/2.3.0-vs20172": {
+      "sha512": "ZVp4t/8LpwTLHbomv9l6F4WY9jk4uWlKakAWo7lnjYI1PUGlRz8D2q0RGt5fxncU1tDTPLFU27j5POvv4/2acA==",
+      "type": "package",
+      "path": "baseclass.contrib.nuget.output/2.3.0-vs20172",
+      "files": [
+        "baseclass.contrib.nuget.output.2.3.0-vs20172.nupkg.sha512",
+        "baseclass.contrib.nuget.output.nuspec",
+        "build/net40/Baseclass.Contrib.Nuget.Output.Build.dll",
+        "build/net40/Baseclass.Contrib.Nuget.Output.targets"
+      ]
+    },
     "Libuv/1.9.1": {
       "sha512": "PpdpJrG1mNH75YCVS2ImrW+cwQ9Py7T1Tf42nBq7Chsmu2VfkC3OWHCN5t6P5brWxLH4bO156/RAuCXjFBWZ6g==",
       "type": "package",
@@ -11070,14 +11101,25 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "TravieIO.Contract/1.0.0": {
+      "type": "project",
+      "path": "../TravieIO.Contract/TravieIO.Contract.csproj",
+      "msbuildProject": "../TravieIO.Contract/TravieIO.Contract.csproj"
+    },
     "TravieIO.DataAccess/1.0.0": {
       "type": "project",
       "path": "../TravieIO.DataAccess/TravieIO.DataAccess.csproj",
       "msbuildProject": "../TravieIO.DataAccess/TravieIO.DataAccess.csproj"
+    },
+    "TravieIO.Services/1.0.0": {
+      "type": "project",
+      "path": "../TravieIO.Services/TravieIO.Services.csproj",
+      "msbuildProject": "../TravieIO.Services/TravieIO.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
+      "Baseclass.Contrib.Nuget.Output >= 2.3.0-vs20172",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.1.1",
       "Microsoft.AspNetCore >= 1.1.2",
       "Microsoft.AspNetCore.Authentication.Cookies >= 1.1.2",
@@ -11095,7 +11137,9 @@
       "Microsoft.NETCore.App >= 1.1.2",
       "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 1.1.1",
-      "TravieIO.DataAccess >= 1.0.0"
+      "TravieIO.Contract >= 1.0.0",
+      "TravieIO.DataAccess >= 1.0.0",
+      "TravieIO.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11115,8 +11159,14 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
+            "C:\\www\\TravieIO\\TravieIO\\TravieIO.Contract\\TravieIO.Contract.csproj": {
+              "projectPath": "C:\\www\\TravieIO\\TravieIO\\TravieIO.Contract\\TravieIO.Contract.csproj"
+            },
             "C:\\www\\TravieIO\\TravieIO\\TravieIO.DataAccess\\TravieIO.DataAccess.csproj": {
               "projectPath": "C:\\www\\TravieIO\\TravieIO\\TravieIO.DataAccess\\TravieIO.DataAccess.csproj"
+            },
+            "C:\\www\\TravieIO\\TravieIO\\TravieIO.Services\\TravieIO.Services.csproj": {
+              "projectPath": "C:\\www\\TravieIO\\TravieIO\\TravieIO.Services\\TravieIO.Services.csproj"
             }
           }
         }
@@ -11168,6 +11218,10 @@
           "Microsoft.VisualStudio.Web.BrowserLink": {
             "target": "Package",
             "version": "1.1.2"
+          },
+          "Baseclass.Contrib.Nuget.Output": {
+            "target": "Package",
+            "version": "2.3.0-vs20172"
           },
           "Microsoft.Extensions.Configuration.UserSecrets": {
             "target": "Package",
