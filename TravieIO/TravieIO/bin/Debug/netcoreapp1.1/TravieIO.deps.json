@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "6bb5aeea54ee9632ec9d027497ba04cc68f5ee8f"
+    "signature": "9631746c916038b23ce586ba73da1cbd1707c90a"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v1.1": {
       "travieio/1.0.0": {
         "dependencies": {
+          "Baseclass.Contrib.Nuget.Output": "2.3.0-vs20172",
           "Microsoft.ApplicationInsights.AspNetCore": "2.1.1",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Authentication.Cookies": "1.1.2",
@@ -40,7 +41,9 @@
           "Microsoft.NETCore.App": "1.1.2",
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "1.1.1",
-          "TravieIO.DataAccess": "1.0.0"
+          "TravieIO.Contract": "1.0.0",
+          "TravieIO.DataAccess": "1.0.0",
+          "TravieIO.Services": "1.0.0"
         },
         "runtime": {
           "TravieIO.dll": {}
@@ -49,6 +52,7 @@
           "TravieIO.dll": {}
         }
       },
+      "baseclass.contrib.nuget.output/2.3.0-vs20172": {},
       "microsoft.applicationinsights/2.4.0": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -1975,6 +1979,17 @@
           "ref/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "travieio.contract/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        },
+        "runtime": {
+          "TravieIO.Contract.dll": {}
+        },
+        "compile": {
+          "TravieIO.Contract.dll": {}
+        }
+      },
       "travieio.dataaccess/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.2",
@@ -1983,13 +1998,27 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.2",
           "Microsoft.EntityFrameworkCore.Tools": "1.1.1",
-          "Microsoft.NETCore.App": "1.1.2"
+          "Microsoft.NETCore.App": "1.1.2",
+          "TravieIO.Contract": "1.0.0"
         },
         "runtime": {
           "TravieIO.DataAccess.dll": {}
         },
         "compile": {
           "TravieIO.DataAccess.dll": {}
+        }
+      },
+      "travieio.services/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2",
+          "TravieIO.Contract": "1.0.0",
+          "TravieIO.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "TravieIO.Services.dll": {}
+        },
+        "compile": {
+          "TravieIO.Services.dll": {}
         }
       },
       "libuv/1.9.1": {
@@ -3625,6 +3654,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "baseclass.contrib.nuget.output/2.3.0-vs20172": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZVp4t/8LpwTLHbomv9l6F4WY9jk4uWlKakAWo7lnjYI1PUGlRz8D2q0RGt5fxncU1tDTPLFU27j5POvv4/2acA==",
+      "path": "baseclass.contrib.nuget.output/2.3.0-vs20172",
+      "hashPath": "baseclass.contrib.nuget.output.2.3.0-vs20172.nupkg.sha512"
+    },
     "microsoft.applicationinsights/2.4.0": {
       "type": "package",
       "serviceable": true,
@@ -4514,7 +4550,17 @@
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
+    "travieio.contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "travieio.dataaccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "travieio.services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

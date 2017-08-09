@@ -12,6 +12,7 @@
     <UserSecretsId>aspnet-TravieIO-bacf642f-cec7-4808-ae87-c7e4af63a46c</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Baseclass.Contrib.Nuget.Output" Version="2.3.0-vs20172" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
@@ -38,7 +39,9 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TravieIO.Contract\TravieIO.Contract.csproj" />
     <ProjectReference Include="..\TravieIO.DataAccess\TravieIO.DataAccess.csproj" />
+    <ProjectReference Include="..\TravieIO.Services\TravieIO.Services.csproj" />
   </ItemGroup>
 
 </Project>
