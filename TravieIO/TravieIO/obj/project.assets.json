@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Baseclass.Contrib.Nuget.Output/2.3.0-vs20172": {
@@ -4310,6 +4310,12 @@
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
           "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "bin/placeholder/TravieIO.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TravieIO.Contract.dll": {}
         }
       },
       "TravieIO.DataAccess/1.0.0": {
@@ -4324,6 +4330,12 @@
           "Microsoft.EntityFrameworkCore.Tools": "1.1.1",
           "Microsoft.NETCore.App": "1.1.2",
           "TravieIO.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TravieIO.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TravieIO.DataAccess.dll": {}
         }
       },
       "TravieIO.Services/1.0.0": {
@@ -4333,6 +4345,12 @@
           "Microsoft.NETCore.App": "1.1.2",
           "TravieIO.Contract": "1.0.0",
           "TravieIO.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TravieIO.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TravieIO.Services.dll": {}
         }
       }
     }
@@ -11147,15 +11165,28 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\www\\TravieIO\\TravieIO\\TravieIO\\TravieIO.csproj",
-      "projectName": "TravieIO",
-      "projectPath": "C:\\www\\TravieIO\\TravieIO\\TravieIO\\TravieIO.csproj",
+      "projectUniqueName": "C:\\www\\TravieIO\\TravieIO\\TravieIO\\TravieIO.Web.csproj",
+      "projectName": "TravieIO.Web",
+      "projectPath": "C:\\www\\TravieIO\\TravieIO\\TravieIO\\TravieIO.Web.csproj",
+      "packagesPath": "C:\\Users\\Travie\\.nuget\\packages\\",
       "outputPath": "C:\\www\\TravieIO\\TravieIO\\TravieIO\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Travie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Travie\\.dotnet\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -11170,6 +11201,11 @@
             }
           }
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {

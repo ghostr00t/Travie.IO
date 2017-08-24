@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravieIO", "TravieIO\TravieIO.csproj", "{9B79D832-4872-4F69-A070-4E873C68BEE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravieIO.Web", "TravieIO\TravieIO.Web.csproj", "{9B79D832-4872-4F69-A070-4E873C68BEE1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravieIO.DataAccess", "TravieIO.DataAccess\TravieIO.DataAccess.csproj", "{7249A590-920F-4DEA-8F4D-E452CD34522A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravieIO.Contract", "TravieIO.Contract\TravieIO.Contract.csproj", "{6F7B0A18-415E-4665-88B6-E74CD23AE506}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravieIO.Services", "TravieIO.Services\TravieIO.Services.csproj", "{3DC4360A-3AE6-40A3-A00F-F7BF3621444D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravieIO.Services", "TravieIO.Services\TravieIO.Services.csproj", "{3DC4360A-3AE6-40A3-A00F-F7BF3621444D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB7FCB36-D9F5-4357-9871-9E5EE316A4D5}
 	EndGlobalSection
 EndGlobal

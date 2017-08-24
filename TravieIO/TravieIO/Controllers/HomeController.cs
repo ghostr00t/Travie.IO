@@ -10,7 +10,14 @@ namespace TravieIO.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction(nameof(ProjectsController.Index), "Projects");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public IActionResult About()

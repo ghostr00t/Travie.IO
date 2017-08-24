@@ -11,6 +11,10 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-TravieIO-bacf642f-cec7-4808-ae87-c7e4af63a46c</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="webpack.config.js" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Baseclass.Contrib.Nuget.Output" Version="2.3.0-vs20172" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
@@ -38,7 +42,7 @@
   <ItemGroup>
     <Folder Include="Frontend\Projects\" />
     <Folder Include="Frontend\Shared\Components\" />
-    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TravieIO.Contract\TravieIO.Contract.csproj" />

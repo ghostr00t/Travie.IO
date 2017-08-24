@@ -1,6 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+      "C:\\Users\\Travie\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Travie\\.nuget\\packages"
     ]
   }

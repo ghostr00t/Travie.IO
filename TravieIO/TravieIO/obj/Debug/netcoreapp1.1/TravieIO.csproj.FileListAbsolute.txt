@@ -14,3 +14,5 @@ C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInf
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.AssemblyInfo.cs
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.dll
 C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.pdb
+C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.csproj.CoreCompileInputs.cache
+C:\www\TravieIO\TravieIO\TravieIO\obj\Debug\netcoreapp1.1\TravieIO.AssemblyInfoInputs.cache
